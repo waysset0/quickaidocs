@@ -55,6 +55,10 @@ tr.divider > td {
 	background-color: #808080;
 }
 
+.link {
+	color: blue;
+}
+
 /* FOOTER */
 
 .footer {
