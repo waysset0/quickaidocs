@@ -1,91 +1,109 @@
 @import "./reset.css";
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
-/*
-font-family: 'Merriweather', serif;
+/* 
+font-family: 'Merriweather', serif; 
 */
 
 :root {
-	--bg-color: #14171c;
+  --bg-color: #14171c;
 }
 
 /* header */
 
 .header {
-	background-color: var(--bg-color);
-	max-height: 1600px;
+  background-color: var(--bg-color);
+  max-height: 1600px;
+  max-width: 1600px;
 }
 
 .title {
-	color: white;
-	font-size: 50px;
-	text-align: center; 
-	font-family: 'Comfortaa', sans-serif;
-	padding: 20px;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Comfortaa', sans-serif;
+  padding: 20px;
 }
 
 /* MAIN */
 
 .main {
-	background-color: var(--bg-color);
-	max-width: 1600px;
-	max-height: 1600px;
+  background-color: var(--bg-color);
+  max-width: 1600px;
+  max-height: 1600px;
 }
 
 /* TABLE */
 
 tr.divider > td {
-	text-align: center;  
-    border: 2px solid #fff;
-    font-family: 'Comfortaa', sans-serif;
-    padding: 15px;
-    height: 100%;
-    table-layout: fixed;
+  text-align: center;
+  border: 2px solid #fff;
+  font-family: 'Comfortaa', sans-serif;
+  padding: 15px;
+  height: 100%;
+  table-layout: fixed;
 }
 
 .divider__text {
-	font-size: 20px;
-	color: white;
-	font-family: 'Comfortaa', sans-serif;
+  font-size: 20px;
+  color: white;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.divider__text1 {
+  padding: 15px;
+  font-size: 20px;
+  color: white;
+  font-family: 'Comfortaa', sans-serif;
 }
 
 /* GENERAL */
 
 .body {
-	background-color: #808080;
+  background-color: #808080;
 }
 
 .link {
-	color: blue;
+  color: blue;
 }
 
 /* FOOTER */
 
 .footer {
-    margin-top: auto;
-    padding: 60px 0 50px;
-    background-color: var(--bg-color);
-    color: white;
-    font-family: 'Comfortaa', sans-serif;
+  margin-top: auto;
+  padding: 60px 0 50px;
+  background-color: var(--bg-color);
+  color: white;
+  font-family: 'Comfortaa', sans-serif;
 }
 
 .footer__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 27px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 27px;
 }
 
 .social {
-    display: flex;
-    column-gap: 30px;
-    align-items: center;
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
 }
 
 .copyright {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .copyright p + p {
-    margin-top: 0.5em;
+  margin-top: 0.5em;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+  .title {
+    font-size: 30px;
+    padding: 10px;
+  }
+  
+  /* Add more modifications for mobile devices here */
 }
